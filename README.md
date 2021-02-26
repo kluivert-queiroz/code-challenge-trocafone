@@ -39,7 +39,7 @@ deduplicateSentence("Hello Hello Bob") // resulta "Hello Bob"
 
 O propósito é encontrar a primeira maior palavra de uma sentença.
 
-```js
+```javascript
 findFirstBiggestWord("Hello Bob") // resulta em "Hello"
 ```
 
@@ -52,3 +52,34 @@ Palavras:
 Hello!!! - A palavra é Hello
 @Uncle123 - A palavra é Uncle
 ```
+
+### Desafio #4 WordMesh
+
+O propósito é receber uma matriz de palavras que podem ou não ser "ligadas" e retornar apenas os "conectores" entre as palavras.
+Uma ligação de palavras neste desafio é quando o final de uma palavra contém as mesmas letras que o começo de outra. 
+
+Exemplo de palavras ligáveis:
+```
+apply 	 -> plywood
+apple 	 -> each
+behemoth -> mother
+...
+```
+
+Exemplo de palavras não ligáveis:
+```
+apply -> playground
+apple -> peggy
+...
+```
+
+Caso todas as palavras possam ser ligadas deve retornar apenas os "conectores" das palavras.
+Exemplo:
+
+```javascript
+wordMesh(["apply", "plywood"], "ply")
+wordMesh(["apple", "each"], "e")
+```
+
+Se alguma das palavras não "ligar" com a próxima a função deve retornar `false`.
+
