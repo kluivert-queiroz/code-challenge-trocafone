@@ -44,7 +44,7 @@ findFirstBiggestWord("Hello Bob") // resulta em "Hello"
 ```
 ## Desafio #4 WordMesh (Bônus)
 
-O propósito é receber uma matriz de palavras que podem ou não ser "ligadas" e retornar apenas os "conectores" entre as palavras.
+O propósito é receber uma matriz de com N palavras que podem ou não ser "ligadas" e retornar apenas os "conectores" entre as palavras.
 Uma ligação de palavras neste desafio é quando o final de uma palavra contém as mesmas letras que o começo de outra. 
 
 Exemplo de palavras ligáveis:
@@ -71,8 +71,17 @@ wordMesh(["apple", "each"]) // resulta em "e"
 wordMesh(["word", "notmesh"]) // false, porque o final de "word" não é começo de "notmesh"
 
 ```
+A função deve suportar matrizes com N palavras, ou seja, de tamanho indeterminado, mas o tamanho sempre será par para o propósito do desafio.
+```js
+wordMesh(["apple", "each", "chainsmoker", "river"]) // echr
+```
+O resultado é `echr`, porque:
+- `apple` e `each` ligam por `e`, 
+- `each` e `chainsmoker` ligam por `ch` 
+- e `chainsmoker` e `river` ligam por `r`
 
-Se alguma das palavras não "ligar" com a próxima a função deve retornar `false`.
+
+Se alguma das palavras não "ligar" com a próxima, a função deve retornar `false`.
 
 ## Informações
 Palavras são conjuntos de letras alfanuméricos. Ou seja símbolos e acentuações como `!@#...` não são considerados palavras para o desafio.
