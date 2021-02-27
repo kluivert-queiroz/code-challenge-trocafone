@@ -42,18 +42,7 @@ O propósito é encontrar a primeira maior palavra de uma sentença.
 ```javascript
 findFirstBiggestWord("Hello Bob") // resulta em "Hello"
 ```
-
-## Informações
-Palavras são conjuntos de letras alfanuméricos. Ou seja símbolos e acentuações como `!@#...` não são considerados palavras para o desafio.
-
-Exemplo:
-```
-Palavras:
-Hello!!! - A palavra é Hello
-@Uncle123 - A palavra é Uncle
-```
-
-### Desafio #4 WordMesh
+## Desafio #4 WordMesh (Bônus)
 
 O propósito é receber uma matriz de palavras que podem ou não ser "ligadas" e retornar apenas os "conectores" entre as palavras.
 Uma ligação de palavras neste desafio é quando o final de uma palavra contém as mesmas letras que o começo de outra. 
@@ -77,9 +66,20 @@ Caso todas as palavras possam ser ligadas deve retornar apenas os "conectores" d
 Exemplo:
 
 ```javascript
-wordMesh(["apply", "plywood"], "ply")
-wordMesh(["apple", "each"], "e")
+wordMesh(["apply", "plywood"]) // resulta em "ply", porque ply é o final de "apply" e o começo de "plywood"
+wordMesh(["apple", "each"]) // resulta em "e"
+wordMesh(["word", "notmesh"]) // false, porque o final de "word" não é começo de "notmesh"
+
 ```
 
 Se alguma das palavras não "ligar" com a próxima a função deve retornar `false`.
 
+## Informações
+Palavras são conjuntos de letras alfanuméricos. Ou seja símbolos e acentuações como `!@#...` não são considerados palavras para o desafio.
+
+Exemplo:
+```
+Palavras:
+Hello!!! - A palavra é Hello
+@Uncle123 - A palavra é Uncle
+```
