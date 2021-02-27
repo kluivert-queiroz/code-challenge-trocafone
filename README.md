@@ -38,7 +38,7 @@ deduplicateSentence("Hello Hello Bob") // resulta "Hello Bob"
 ## Desafio #3 FindFirstBiggestWord
 
 O propósito é encontrar a primeira maior palavra de uma sentença.
-Considerando apenas [palavras](#desafio-2-deduplicatesentence).
+Considerando apenas [palavras](#informações).
 
 ```javascript
 findFirstBiggestWord("Hello Bob") // resulta em "Hello"
