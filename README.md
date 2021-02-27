@@ -31,16 +31,18 @@ camelCase("I said one word!!") // resulta iSaidOneWord
 O propósito e remover palavras que são duplicadas em sequência.
 Por exemplo
 ```js
-deduplicateSentence("Hello Bob. Hello Ana.") // resulta "Hello Bob" mesmo hello repetindo na frase.
+deduplicateSentence("Hello Bob. Hello Ana.") // resulta "Hello Bob. Hello Ana." mesmo hello repetindo na frase.
 deduplicateSentence("Hello Hello Bob") // resulta "Hello Bob"
 ```
 
 ## Desafio #3 FindFirstBiggestWord
 
 O propósito é encontrar a primeira maior palavra de uma sentença.
+Considerando apenas [palavras](#desafio-2-deduplicatesentence).
 
 ```javascript
 findFirstBiggestWord("Hello Bob") // resulta em "Hello"
+findFirstBiggestWord("You're right!") // resulta em "right"
 ```
 ## Desafio #4 WordMesh (Bônus)
 
