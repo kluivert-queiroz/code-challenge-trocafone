@@ -1,7 +1,7 @@
 const deduplicateSentence = require("../src/deduplicateSentence");
 test("deduplicateSentence function", () => {
   expect(deduplicateSentence("The tree tree is under sky")).toBe(
-    "The tree tree is under sky"
+    "The tree is under sky"
   );
   expect(deduplicateSentence("The quick lazy. Lazy is.")).toBe(
     "The quick lazy. Lazy is."
